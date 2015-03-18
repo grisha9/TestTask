@@ -2,15 +2,12 @@ package rzn.ru.myasoedov.testtask;
 
 import android.app.LoaderManager;
 import android.content.Loader;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity implements LoaderManager.LoaderCallbacks<String> {
@@ -24,6 +21,7 @@ public class MainActivity extends ActionBarActivity implements LoaderManager.Loa
         setContentView(R.layout.activity_main);
         text = (EditText) findViewById(R.id.text);
         result = (TextView) findViewById(R.id.result_text);
+        getLoaderManager().initLoader(LOADER_TEXT_REVERT_ID, null, this);
     }
 
 
