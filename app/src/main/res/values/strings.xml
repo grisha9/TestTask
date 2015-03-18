@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestTask</string>
+    <string name="action_revert">Revert</string>
+    <string name="action_clear">clear</string>
+
+</resources>
